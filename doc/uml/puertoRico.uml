@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>puertoRico</OriginalElement>
+  <nodes>
+    <node x="557.9442307692309" y="278.0">puertoRico.Bot</node>
+    <node x="731.4419195387947" y="2044.0">puertoRico.application</node>
+    <node x="222.75673076923084" y="0.0">puertoRico.Type</node>
+    <node x="263.573941936442" y="1336.0">puertoRico.Game</node>
+    <node x="419.4750626906877" y="109.0">puertoRico.Plantations</node>
+    <node x="216.125252872128" y="278.0">puertoRico.Stock</node>
+    <node x="108.02525287212796" y="1147.0">puertoRico.Characters</node>
+    <node x="89.81921333171346" y="109.0">puertoRico.Boat</node>
+    <node x="716.9442307692308" y="1147.0">puertoRico.Network</node>
+    <node x="933.4442307692309" y="0.0">puertoRico.Buildings</node>
+    <node x="296.25673076923084" y="447.0">puertoRico.Player</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="puertoRico.Bot" target="puertoRico.Type">
+      <point x="32.33333333333337" y="-14.5" />
+      <point x="638.7775641025642" y="59.0" />
+      <point x="322.0294580419581" y="59.0" />
+      <point x="47.27272727272725" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Boat" target="puertoRico.Type">
+      <point x="34.33333333333337" y="-14.5" />
+      <point x="175.65254666504683" y="89.0" />
+      <point x="265.30218531468535" y="89.0" />
+      <point x="-9.454545454545496" y="14.5" />
+    </edge>
+    <edge source="puertoRico.application" target="puertoRico.Bot">
+      <point x="34.5" y="-14.5" />
+      <point x="834.9419195387947" y="2024.0" />
+      <point x="851.4442307692308" y="2024.0" />
+      <point x="851.4442307692308" y="407.0" />
+      <point x="642.8192307692309" y="407.0" />
+      <point x="36.375" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Bot" target="puertoRico.Player">
+      <point x="-4.041666666666686" y="14.5" />
+      <point x="602.4025641025642" y="417.0" />
+      <point x="566.6317307692309" y="417.0" />
+      <point x="115.87500000000001" y="-280.0" />
+    </edge>
+    <edge source="puertoRico.Characters" target="puertoRico.Player">
+      <point x="41.53846153846155" y="-14.5" />
+      <point x="217.0637144105895" y="1107.0" />
+      <point x="318.3281593406594" y="1107.0" />
+      <point x="-132.42857142857144" y="280.0" />
+    </edge>
+    <edge source="puertoRico.application" target="puertoRico.Network">
+      <point x="11.5" y="-14.5" />
+      <point x="811.9419195387947" y="2014.0" />
+      <point x="830.3500626906877" y="2014.0" />
+      <point x="51.666666666666686" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Player" target="puertoRico.Bot">
+      <point x="90.125" y="-280.0" />
+      <point x="540.8817307692309" y="407.0" />
+      <point x="594.3192307692309" y="407.0" />
+      <point x="-12.125" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Game" target="puertoRico.Plantations">
+      <point x="98.625" y="-324.0" />
+      <point x="493.698941936442" y="1296.0" />
+      <point x="676.4442307692308" y="1296.0" />
+      <point x="676.4442307692308" y="178.0" />
+      <point x="548.8500626906878" y="178.0" />
+      <point x="60.375000000000014" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Game" target="puertoRico.Network">
+      <point x="111.77499999999998" y="-324.0" />
+      <point x="506.848941936442" y="1306.0" />
+      <point x="768.6108974358974" y="1306.0" />
+      <point x="-10.333333333333343" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Game" target="puertoRico.Player">
+      <point x="6.574999999999932" y="-324.0" />
+      <point x="401.64894193644193" y="1226.0" />
+      <point x="426.7237462987464" y="1226.0" />
+      <point x="426.7237462987464" y="1117.0" />
+      <point x="406.6138736263737" y="1117.0" />
+      <point x="-44.14285714285717" y="280.0" />
+    </edge>
+    <edge source="puertoRico.Characters" target="puertoRico.Plantations">
+      <point x="-10.384615384615358" y="-14.5" />
+      <point x="165.1406374875126" y="1057.0" />
+      <point x="178.91055948555965" y="1057.0" />
+      <point x="178.91055948555965" y="228.0" />
+      <point x="445.3500626906877" y="228.0" />
+      <point x="-43.125" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Characters" target="puertoRico.Stock">
+      <point x="20.769230769230717" y="-14.5" />
+      <point x="196.29448364135868" y="1087.0" />
+      <point x="226.48108479358476" y="1087.0" />
+      <point x="226.48108479358476" y="417.0" />
+      <point x="232.32525287212798" y="417.0" />
+      <point x="-37.80000000000001" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Bot" target="puertoRico.Boat">
+      <point x="-32.33333333333337" y="-14.5" />
+      <point x="574.1108974358974" y="208.0" />
+      <point x="186.38171333171346" y="208.0" />
+      <point x="45.0625" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Bot" target="puertoRico.Plantations">
+      <point x="0.0" y="-14.5" />
+      <point x="606.4442307692309" y="198.0" />
+      <point x="514.3500626906878" y="198.0" />
+      <point x="25.875" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Characters" target="puertoRico.Boat">
+      <point x="-20.769230769230717" y="-14.5" />
+      <point x="154.75602210289725" y="1047.0" />
+      <point x="168.5259441009443" y="1047.0" />
+      <point x="168.5259441009443" y="258.0" />
+      <point x="173.50671333171346" y="258.0" />
+      <point x="32.1875" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Player" target="puertoRico.Characters">
+      <point x="-88.28571428571433" y="280.0" />
+      <point x="362.4710164835165" y="1117.0" />
+      <point x="227.44832979520487" y="1117.0" />
+      <point x="51.923076923076906" y="-14.5" />
+    </edge>
+    <edge source="puertoRico.Bot" target="puertoRico.Characters">
+      <point x="12.125" y="14.5" />
+      <point x="618.5692307692309" y="1127.0" />
+      <point x="237.83294517982023" y="1127.0" />
+      <point x="62.307692307692264" y="-14.5" />
+    </edge>
+    <edge source="puertoRico.Characters" target="puertoRico.Type">
+      <point x="-62.30769230769238" y="-14.5" />
+      <point x="113.21756056443559" y="1127.0" />
+      <point x="48.934597947097984" y="1127.0" />
+      <point x="48.934597947097984" y="49.0" />
+      <point x="227.4840034965036" y="49.0" />
+      <point x="-47.27272727272725" y="14.5" />
+    </edge>
+    <edge source="puertoRico.application" target="puertoRico.Game">
+      <point x="-34.5" y="-14.5" />
+      <point x="765.9419195387947" y="2014.0" />
+      <point x="460.823941936442" y="2014.0" />
+      <point x="65.75" y="324.0" />
+    </edge>
+    <edge source="puertoRico.Bot" target="puertoRico.Bot">
+      <point x="-44.45833333333334" y="14.5" />
+      <point x="561.9858974358975" y="327.0" />
+      <point x="537.9442307692309" y="327.0" />
+      <point x="537.9442307692309" y="299.75" />
+      <point x="-48.5" y="7.25" />
+    </edge>
+    <edge source="puertoRico.Characters" target="puertoRico.Characters">
+      <point x="-54.0" y="14.5" />
+      <point x="121.52525287212796" y="1196.0" />
+      <point x="88.02525287212796" y="1196.0" />
+      <point x="88.02525287212796" y="1161.5" />
+      <point x="-67.5" y="-0.0" />
+    </edge>
+    <edge source="puertoRico.Player" target="puertoRico.Type">
+      <point x="-38.625" y="-280.0" />
+      <point x="412.13173076923084" y="357.0" />
+      <point x="383.81923076923084" y="357.0" />
+      <point x="383.81923076923084" y="89.0" />
+      <point x="293.6658216783217" y="89.0" />
+      <point x="18.909090909090878" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Network" target="puertoRico.Player">
+      <point x="0.0" y="-14.5" />
+      <point x="778.9442307692308" y="1117.0" />
+      <point x="583.1853021978022" y="1117.0" />
+      <point x="132.4285714285714" y="280.0" />
+    </edge>
+    <edge source="puertoRico.Game" target="puertoRico.Characters">
+      <point x="-59.17500000000007" y="-324.0" />
+      <point x="335.89894193644193" y="1266.0" />
+      <point x="202.52525287212796" y="1266.0" />
+      <point x="27.0" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Player" target="puertoRico.Stock">
+      <point x="-90.125" y="-280.0" />
+      <point x="360.63173076923084" y="377.0" />
+      <point x="307.92525287212794" y="377.0" />
+      <point x="37.799999999999955" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Player" target="puertoRico.Plantations">
+      <point x="12.875" y="-280.0" />
+      <point x="463.63173076923084" y="427.0" />
+      <point x="459.795174870175" y="427.0" />
+      <point x="459.795174870175" y="258.0" />
+      <point x="497.1000626906877" y="258.0" />
+      <point x="8.625" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Game" target="puertoRico.Bot">
+      <point x="72.32500000000005" y="-324.0" />
+      <point x="467.39894193644204" y="1276.0" />
+      <point x="646.0483974358975" y="1276.0" />
+      <point x="646.0483974358975" y="417.0" />
+      <point x="634.7358974358975" y="417.0" />
+      <point x="28.291666666666686" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Boat" target="puertoRico.Boat">
+      <point x="-45.0625" y="14.5" />
+      <point x="96.25671333171346" y="158.0" />
+      <point x="69.81921333171346" y="158.0" />
+      <point x="69.81921333171346" y="123.5" />
+      <point x="-51.5" y="-0.0" />
+    </edge>
+    <edge source="puertoRico.Stock" target="puertoRico.Type">
+      <point x="27.0" y="-14.5" />
+      <point x="297.125252872128" y="218.0" />
+      <point x="281.39264069264067" y="218.0" />
+      <point x="281.39264069264067" y="89.0" />
+      <point x="284.21127622377634" y="89.0" />
+      <point x="9.454545454545496" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Network" target="puertoRico.Network">
+      <point x="-31.0" y="14.5" />
+      <point x="747.9442307692308" y="1206.0" />
+      <point x="686.9442307692308" y="1206.0" />
+      <point x="686.9442307692308" y="1154.25" />
+      <point x="-62.0" y="-7.25" />
+    </edge>
+    <edge source="puertoRico.Plantations" target="puertoRico.Plantations">
+      <point x="-60.375" y="14.5" />
+      <point x="428.1000626906877" y="158.0" />
+      <point x="399.4750626906877" y="158.0" />
+      <point x="399.4750626906877" y="123.5" />
+      <point x="-69.0" y="-0.0" />
+    </edge>
+    <edge source="puertoRico.Game" target="puertoRico.Stock">
+      <point x="-19.725000000000023" y="-324.0" />
+      <point x="375.348941936442" y="1236.0" />
+      <point x="274.75673076923084" y="1236.0" />
+      <point x="274.75673076923084" y="417.0" />
+      <point x="264.72525287212795" y="417.0" />
+      <point x="-5.400000000000034" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Plantations" target="puertoRico.Type">
+      <point x="34.5" y="-14.5" />
+      <point x="522.9750626906878" y="69.0" />
+      <point x="312.5749125874126" y="69.0" />
+      <point x="37.818181818181756" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Game" target="puertoRico.Boat">
+      <point x="-124.92500000000007" y="-324.0" />
+      <point x="270.14894193644193" y="1316.0" />
+      <point x="15.0" y="1316.0" />
+      <point x="15.0" y="238.0" />
+      <point x="109.13171333171346" y="238.0" />
+      <point x="-32.1875" y="14.5" />
+    </edge>
+    <edge source="puertoRico.Stock" target="puertoRico.Player">
+      <point x="48.599999999999966" y="14.5" />
+      <point x="318.72525287212795" y="367.0" />
+      <point x="386.38173076923084" y="367.0" />
+      <point x="-64.375" y="-280.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="362.5" y="591.0" />
+  <SelectedNodes>
+    <node>puertoRico.Bot</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

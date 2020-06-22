@@ -1,0 +1,63 @@
+# To build this Dockerfile :
+# 1) Rename this file to exactly "Dockerfile" (without the quotes)
+# 2) from a terminal, cd into this file's folder
+# 3) docker build .
+# 4) ???
+
+
+# NOTE : path like /a/b/c/ is ABSOLUTE
+#        path like a/b/c is RELATIVE
+
+
+# Step  1 : we build the jar dependencies of the project (root's pom.xml)
+
+
+
+FROM maven:3.6.0-jdk-11-slim AS globalBuild
+
+# Copy everything from this Dockerfile's position, add it to the /app absolute path of the container environment
+COPY . /app
+
+
+# basically a cd command, so we can get to pom.xml's position
+WORKDIR /app
+
+# maven does the maven
+# RUN mvn -f /home/app/pom.xml clean package ?
+# RUN mvn /home/app/pom.xml clean package ?
+# RUN mvn clean install ?
+RUN mvn install
+# 10 mins of waiting incoming now - at this moment we could build a new base image
+
+
+
+
+
+
+
+
+
+# Step 2 : Running the code specific to the Dockerfile
+# So serverPlayer module's code for this one
+
+
+
+
+# java stuff then
+FROM openjdk:11-jre-slim
+
+# I believe The WORKDIR resets when a new FROM statement is used
+WORKDIR /app
+
+
+# This copies the jar we made with maven (in the globalBuild phase) and we put it in the /app folder
+COPY --from=globalBuild /app/server/target/serverPlayer-1.0-SNAPSHOT-jar-with-dependencies.jar /app
+
+# Basically the port to listen to
+EXPOSE 8080
+
+# CMD is a command ran on container start
+# java -jar serverPl.......dependencies.jar
+# that jar is in the /app folder and we are in the /app folder. So it's good
+#ENTRYPOINT ["java","-jar","/usr/local/lib/serverPlayer.jar"] ?
+CMD ["java -jar serverPlayer-1.0-SNAPSHOT-jar-with-dependencies.jar"]

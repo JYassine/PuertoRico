@@ -1,0 +1,15 @@
+language: java
+jdk:
+  - openjdk10
+script:
+  - mvn clean package
+  - cd server
+  - mvn exec:java@ServerSpring &
+  - cd ../PuertoRico
+  - cd serverGame
+  - mvn exec:java@ServerGame &
+  - cd ../serverPlayer
+  - mvn exec:java@ServerPlayer &
+  - mvn exec:java@ServerPlayer &
+  - mvn exec:java@ServerPlayer &
+

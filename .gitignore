@@ -1,0 +1,17 @@
+# exclusion des dossiers contenant les élements générés
+**/out/
+**/target/
+**/build/
+
+#javadoc
+**/javadoc/
+**/apidocs/
+**/test/java/apidocs
+
+# pour intellij
+**/*.iml
+**/.gradle
+**/local.properties
+**/.idea/
+
+*.class

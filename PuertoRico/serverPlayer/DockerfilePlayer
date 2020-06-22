@@ -1,0 +1,45 @@
+# NOTE : path like /a/b/c/ is ABSOLUTE
+#        path like a/b/c is RELATIVE
+
+
+
+# maven time first
+FROM maven:3.6.0-jdk-11-slim AS build
+
+# copy the "src" folder from my current position. Put that into /app
+COPY src /app
+
+# copy the "pom.xml" file from my current position. Put that into /app
+COPY pom.xml /app
+
+# basically a cd command, so we can get to pom.xml's position
+WORKDIR /app
+
+# maven does the maven
+# RUN mvn -f /home/app/pom.xml clean package ?
+# RUN mvn /home/app/pom.xml clean package ?
+# RUN mvn clean install ?
+RUN mvn install
+
+
+
+
+
+# java stuff then
+FROM openjdk:11-jre-slim
+
+# I believe The WORKDIR resets when a new FROM statement is used
+WORKDIR /app
+
+
+# This copies the jar we made with maven (in the build phase) and we put it in the /app folder
+COPY --from=build /app/target/serverPlayer-1.0-SNAPSHOT-jar-with-dependencies.jar /app
+
+# Basically the port to listen to
+EXPOSE 8080
+
+# CMD is a command ran on container start
+# java -jar serverPl.......dependencies.jar
+# that jar is in the /app folder and we are in the /app folder. So it's good
+#ENTRYPOINT ["java","-jar","/usr/local/lib/serverPlayer.jar"] ?
+CMD ["java -jar serverPlayer-1.0-SNAPSHOT-jar-with-dependencies.jar"]
